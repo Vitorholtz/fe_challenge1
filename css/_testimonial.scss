@@ -1,0 +1,41 @@
+
+    .test-title {
+        font-size: 3.5rem;
+        color: $primary-fontcolor;
+        text-align: center;
+        margin: 2em auto;
+    }
+
+    .test-btn {
+        text-align: center;
+        margin-left: 46%;
+
+    }
+
+.testimonial {
+
+    max-width: 1140px;
+    margin: 150px auto;
+    display: flex;
+    text-align: center;
+  
+
+
+    .test-card {
+       
+        width: 30%;
+        margin: auto;
+        padding: 3rem;
+        background-color: $cardcolor;
+
+        h3 {
+
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+}

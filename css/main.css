@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+*::before, *::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  font-family: 'Be Vietnam', sans-serif;
+  font-size: 62.5%;
+}
+
+a,
+a:visited {
+  color: inherit;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0;
+  padding: 3rem 0;
+}
+
+header .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #202C52;
+  cursor: pointer;
+}
+
+header .nav .nav-item:hover {
+  color: #6e6e85;
+}
+
+.hero {
+  max-width: 1140px;
+  margin: 150px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.hero .col-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+}
+
+.hero .col-left h1 {
+  font-size: 5.5rem;
+  line-height: 1.2;
+  color: #202C52;
+}
+
+.hero .col-left p {
+  width: 70%;
+  font-size: 1.6rem;
+}
+
+.detail {
+  position: absolute;
+  top: -20rem;
+  right: -20rem;
+  z-index: -1;
+}
+
+.features {
+  max-width: 1140px;
+  margin: 150px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.features .col-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+}
+
+.features .col-left h2 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  color: #202C52;
+}
+
+.features .col-left p {
+  width: 60%;
+  font-size: 1.6rem;
+}
+
+.features .col-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.features .col-right .info-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+.features .col-right .info-card .card-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.features .col-right .info-card .card-head span {
+  padding: .5rem 2rem;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  background-color: #F45E3D;
+  border-radius: 50px;
+  margin-right: 2rem;
+}
+
+.features .col-right .info-card .card-head h3 {
+  font-size: 2rem;
+}
+
+.features .col-right .info-card .card-text {
+  font-size: 1.5rem;
+  margin-left: 7rem;
+}
+
+.test-title {
+  font-size: 3.5rem;
+  color: #202C52;
+  text-align: center;
+  margin: 2em auto;
+}
+
+.test-btn {
+  text-align: center;
+  margin-left: 46%;
+}
+
+.testimonial {
+  max-width: 1140px;
+  margin: 150px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.testimonial .test-card {
+  width: 30%;
+  margin: auto;
+  padding: 3rem;
+  background-color: #FAFAFA;
+}
+
+.testimonial .test-card h3 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+.testimonial .test-card p {
+  font-size: 1.6rem;
+}
+
+footer {
+  width: 100%;
+  height: 50rem;
+  background-color: #F45E3D;
+  margin-top: 20rem;
+}
+
+.btn {
+  padding: 1.3rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #F45E3D;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 400;
+  -webkit-box-shadow: 0 10px 10px -10px rgba(242, 95, 58, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(242, 95, 58, 0.5);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  background-color: #F26945;
+}
+/*# sourceMappingURL=main.css.map */

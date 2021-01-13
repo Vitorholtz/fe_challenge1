@@ -1,0 +1,27 @@
+header {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 3rem 0;
+
+    .nav {
+
+        display: flex;
+        gap: 30px;
+        flex-flow: row;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $primary-fontcolor;
+        cursor: pointer;
+
+        .nav-item:hover {
+
+            color: rgb(110, 110, 133);
+
+        }
+    }  
+}
