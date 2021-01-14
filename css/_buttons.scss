@@ -26,3 +26,16 @@
 
     @include button();
 }
+
+.white-btn {
+
+    @include button();
+    background-color: white;
+    font-weight: 600;
+    color: $orange1;
+
+    &:hover {
+        background-color: $primary-fontcolor;
+    }
+
+}

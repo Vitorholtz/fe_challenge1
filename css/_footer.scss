@@ -1,6 +1,86 @@
-footer {
+
+
+
+
+.pre-footer {
     width: 100%;
-    height: 50rem;
+    padding: 10rem 0;
     background-color: $orange1;
     margin-top: 20rem;
+
+    .footer-content1 {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        margin: auto;
+
+        h2 {
+
+            font-size: 4rem;
+            color: white;
+        }
+
+    }
+}
+
+
+footer {
+    width: 100%;
+    padding: 10rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(41, 41, 41);
+
+    .footer-col {
+
+        display: flex;
+        flex-direction: column;
+        margin: auto 3.5rem;
+        color: white;
+        font-size: 1.6rem;
+    }
+
+    .social-col{
+
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .icons-row {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+    }
+
+    .info-col1, .info-col2 {
+
+        ul{
+            li {
+                margin-bottom: 1rem;
+                &:hover {
+                    text-decoration: underline;
+                    color: $orange2;
+                }
+            }
+        }
+        
+    }
+
+    .input-col .newsletter-form { 
+        display: flex;
+        margin-bottom: 5rem;
+ 
+    
+      #email-input{
+        width: 100%;
+        border-radius: 50px;
+        padding: 0 2rem;
+    }
+  } 
 }

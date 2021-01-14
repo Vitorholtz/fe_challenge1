@@ -99,6 +99,7 @@ header .nav .nav-item:hover {
 .hero .col-left p {
   width: 70%;
   font-size: 1.6rem;
+  color: #B6B5BD;
 }
 
 .detail {
@@ -142,6 +143,7 @@ header .nav .nav-item:hover {
 .features .col-left p {
   width: 60%;
   font-size: 1.6rem;
+  color: #B6B5BD;
 }
 
 .features .col-right {
@@ -174,6 +176,7 @@ header .nav .nav-item:hover {
 
 .features .col-right .info-card .card-head span {
   padding: .5rem 2rem;
+  max-height: 3.5rem;
   color: white;
   font-size: 1.6rem;
   font-weight: 500;
@@ -189,6 +192,7 @@ header .nav .nav-item:hover {
 .features .col-right .info-card .card-text {
   font-size: 1.5rem;
   margin-left: 7rem;
+  color: #B6B5BD;
 }
 
 .test-title {
@@ -226,13 +230,112 @@ header .nav .nav-item:hover {
 
 .testimonial .test-card p {
   font-size: 1.6rem;
+  color: #B6B5BD;
+}
+
+@media (max-width: 1250px) {
+  .hero, .features, .testimonial {
+    max-width: 950px;
+  }
+}
+
+.pre-footer {
+  width: 100%;
+  padding: 10rem 0;
+  background-color: #F45E3D;
+  margin-top: 20rem;
+}
+
+.pre-footer .footer-content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.pre-footer .footer-content1 h2 {
+  font-size: 4rem;
+  color: white;
 }
 
 footer {
   width: 100%;
-  height: 50rem;
-  background-color: #F45E3D;
-  margin-top: 20rem;
+  padding: 10rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #292929;
+}
+
+footer .footer-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto 3.5rem;
+  color: white;
+  font-size: 1.6rem;
+}
+
+footer .social-col {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer .social-col .icons-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+footer .info-col1 ul li, footer .info-col2 ul li {
+  margin-bottom: 1rem;
+}
+
+footer .info-col1 ul li:hover, footer .info-col2 ul li:hover {
+  text-decoration: underline;
+  color: #F26945;
+}
+
+footer .input-col .newsletter-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+footer .input-col .newsletter-form #email-input {
+  width: 100%;
+  border-radius: 50px;
+  padding: 0 2rem;
 }
 
 .btn {
@@ -259,5 +362,38 @@ footer {
   -webkit-transform: translateY(-0.5rem);
           transform: translateY(-0.5rem);
   background-color: #F26945;
+}
+
+.white-btn {
+  padding: 1.3rem 2.5rem;
+  border: none;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #F45E3D;
+  color: white;
+  font-size: 1.6rem;
+  font-family: "Be Vietnam", sans-serif;
+  font-weight: 400;
+  -webkit-box-shadow: 0 10px 10px -10px rgba(242, 95, 58, 0.5);
+          box-shadow: 0 10px 10px -10px rgba(242, 95, 58, 0.5);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  background-color: white;
+  font-weight: 600;
+  color: #F45E3D;
+}
+
+.white-btn:hover {
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
+  background-color: #F26945;
+}
+
+.white-btn:hover {
+  background-color: #202C52;
 }
 /*# sourceMappingURL=main.css.map */
