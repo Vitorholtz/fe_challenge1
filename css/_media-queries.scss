@@ -6,3 +6,45 @@
     }
 
 }
+
+@media (max-width: 1080px) {
+
+
+    .hero, .features, .testimonial {
+        max-width: 850px;
+
+        .col-left {
+
+            h1 {
+                font-size: 3.5rem;
+            }
+        }
+
+        .col-right img {
+           
+           width: 40rem;
+            
+        }
+    
+    }
+
+    .features {
+
+        flex-direction: column;
+    
+
+        .col-left{
+
+            text-align: center;
+            justify-content: center;
+            width: 70%;
+            margin: 5rem auto;
+
+            p {
+                align-self: center;
+                width: 100%;
+            }
+        }
+    }
+
+}

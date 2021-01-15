@@ -239,6 +239,38 @@ header .nav .nav-item:hover {
   }
 }
 
+@media (max-width: 1080px) {
+  .hero, .features, .testimonial {
+    max-width: 850px;
+  }
+  .hero .col-left h1, .features .col-left h1, .testimonial .col-left h1 {
+    font-size: 3.5rem;
+  }
+  .hero .col-right img, .features .col-right img, .testimonial .col-right img {
+    width: 40rem;
+  }
+  .features {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .features .col-left {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 70%;
+    margin: 5rem auto;
+  }
+  .features .col-left p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 100%;
+  }
+}
+
 .pre-footer {
   width: 100%;
   padding: 10rem 0;
@@ -256,7 +288,7 @@ header .nav .nav-item:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 50%;
+  width: 70%;
   margin: auto;
 }
 
