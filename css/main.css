@@ -269,6 +269,9 @@ a:visited {
         align-self: center;
     width: 100%;
   }
+  .detail {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
@@ -326,11 +329,12 @@ a:visited {
   }
   .menu-toggle-on {
     background-color: #FFF0EB;
-    height: 120vh;
+    height: 100vh;
     position: absolute;
-    top: -6rem;
+    top: 0;
+    margin: 0;
     left: 0;
-    padding: 10rem;
+    padding: 8rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -373,6 +377,34 @@ a:visited {
   .menu-toggle-on .hamburger .three {
     -webkit-transform: rotate(-45deg) translate(5px, -5px);
             transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .testimonial .test-card .avatar {
+    width: 10rem;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 68.5%;
+  }
+  header .btn {
+    display: none;
+  }
+  .hero .col-right img {
+    width: 40rem;
+  }
+  .testimonial {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .testimonial .test-card {
+    width: 70%;
+    margin-bottom: 2rem;
   }
 }
 
