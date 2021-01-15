@@ -11,7 +11,7 @@
 
 
     .hero, .features, .testimonial {
-        max-width: 850px;
+        max-width: 750px;
 
         .col-left {
 
@@ -45,6 +45,116 @@
                 width: 100%;
             }
         }
+    }
+}
+
+@media (max-width: 800px) {
+
+    .hero {
+
+        flex-direction: column;
+
+        .col-left {
+
+            text-align: center;
+            align-items: center;
+            margin-bottom: 10rem;
+
+            h1 {
+
+                width: 50%;
+            }
+        }
+
+        .col-right img {
+           
+            width: 60rem;
+             
+         }
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10rem;
+    }
+
+html {
+
+    font-size: 52.5%;
+ }
+
+ .menu-toggle {
+
+    .nav {
+        display: none;
+    }
+
+    .hamburger {
+        width: 30px;
+        height: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+
+        span {
+
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: $primary-fontcolor;
+            transition-duration: .4s;
+        }
+    }
+}
+
+    .menu-toggle-on {
+
+        background-color: $orange3;
+        height: 120vh;
+        position: absolute;
+        top: -6rem;
+        left: 0;
+        padding: 10rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        transition: .7s;
+    
+
+        .btn {
+
+            display: none;
+      
+        }
+        .navbar-logo {
+            display: none;
+        }
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+            font-size: 4rem;
+            align-self: center;
+            width: 80%;
+            margin: auto;
+        }
+
+        .hamburger {
+
+            .one {
+                transform: rotate(45deg) translate(7px, 7px);
+            }
+
+            .two {
+                opacity: 0;
+            }
+
+            .three {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+
     }
 
 }
