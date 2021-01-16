@@ -46,12 +46,10 @@ footer {
     .social-col{
 
         height: 150px;
-        display: flex;
-        flex-direction: column;
         justify-content: space-around;
 
         .icons-row {
-            display: flex;
+
             justify-content: space-between;
             width: 100%;
         }
